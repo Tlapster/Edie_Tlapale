@@ -21,3 +21,48 @@
     --fondoFooter: #100E1D;
 
 }
+
+.container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--font-Poppins);
+    margin: auto;
+    
+}
+.navegador{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu3{
+    align-self: center
+}
+.edielogo{
+    font-family: var(--font-Heebo);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 35px;
+    color: var(--grisObscuro);
+
+}
+.menuHeader{
+    display: flex;
+    list-style: none;
+    font-family: var(--font-Poppins);
+    font-weight: 500;
+    font-size: 24px;
+    align-items: center;
+    gap: 1.8rem;
+    margin: auto;
+   
+}
+.menulihead a{
+    text-decoration: none;
+    color: var(--grisObscuro);
+    
+}
