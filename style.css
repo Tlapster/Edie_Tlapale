@@ -1,3 +1,4 @@
+/*_____________ Estilos generales ________*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -22,7 +23,7 @@
     --grismedio: #4f4f4f;
 
 }
-
+/*_____________ Contenedor General ________*/
 .container{
     height: fit-content;
     display: flex;
@@ -32,7 +33,8 @@
     padding: 1rem;
     font-family: var(--font-Poppins);
     margin: auto;
-    
+    max-width: 1440px;
+    min-width: 375px;
 }
 .navegador{
     width: 100%;
@@ -99,7 +101,7 @@ header{
 .hero{
     object-fit: cover;   
     width: 100%;
-    max-height: 100px;
+    max-height: fit-content;
     border-radius: 18px;
 
 }
@@ -151,6 +153,7 @@ header{
     line-height: 21px;
     color: var(--grisTxtMail);
     border: none;
+    outline: none;
 
 }
 .botonJoin{
@@ -176,7 +179,14 @@ header{
     padding-bottom: 4rem;
 }
 .card_icons{
-    padding-bottom: 8rem;
+    margin-bottom: 8rem;
+    border-radius: 24px;
+    padding: 2rem 0;
+    transition: background-color .5s;
+}
+.card_icons:hover{
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    background-color: var(--blanco);
 }
 .edit{
     display: flex;
@@ -524,4 +534,292 @@ footer{
     font-style: normal;
     font-weight: 500;
     line-height: 17px;
+}
+
+
+@media (min-width: 800px){
+    .container{
+        padding: 3rem;        
+    }
+
+    .menu3{
+        align-self: center;
+        display:none;
+        
+    }
+    .edielogo{
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 53px;
+    
+    }
+    .menuHeader{
+        display: flex;
+        list-style: none;
+        font-family: var(--font-Poppins);
+        font-weight: 500;
+        font-size: 24px;
+        align-items: center;
+        gap: 1.8rem;
+        margin: 0;
+        line-height: 36px;      
+       
+    }
+    .menulihead a{
+        text-decoration: none;
+        color: var(--grisObscuro);
+    }
+    header{
+        width: 100%;
+        padding-top: 5rem;
+    }
+    .subUnhappy{
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27px;
+        font-size: 18px;
+        padding-left: 12rem;
+        padding-bottom: 1rem;
+    }
+    .maintitulo{
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 72px;
+        padding-left: 12rem;
+        width: 55%;
+        padding-bottom: 3rem;
+    }
+    .story{
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 72px;
+        padding-left: 12rem;
+        width: 45%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .storyp1{
+        padding-left: 12rem;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        width: 85%;
+        padding-bottom: 40px;
+        width: 40%;
+        text-align: justify;
+        letter-spacing: .12rem;
+    }
+    .storyp2{
+        color: var(--grisTxtSub);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        padding-bottom: 2rem;
+        padding-left: 12rem;
+    }
+    .formulario{
+        width: 25%;
+        justify-content: space-between;
+        padding:.3rem 0 ;
+        border-radius: 12px;
+        margin: 0;
+        margin-left: 12rem;
+    }
+    #email{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;    
+    }
+    .botonJoin{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .ofertas{
+        width: 90%;
+        display: grid;
+        grid-template-areas: 
+        "a a a"
+        "b c d";
+        gap: 4.5rem;
+        padding-top: 12rem;
+        margin: 0;
+
+    }
+    .offer{
+        grid-area: a;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 54px;
+        width: 35%;
+        height: fit-content;
+        padding: 0;
+    }
+    .ofertas>ci1{
+        grid-area: b;
+    }
+    
+    .good{
+        width: 35%;
+        padding-top: 12rem;
+        font-size: 36px;
+        line-height: 54px;
+        padding-left: 4rem; 
+        padding-bottom: 2rem;
+    }
+    .card_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(11,.19fr);
+        gap: 1rem;
+        width: 90%;
+        height: fit-content;
+        padding-bottom: 1rem;
+        margin: auto;
+    }
+    #capp1{
+        grid-column: 1/2;
+        grid-row: 2/5;
+        display: flex;
+    }
+    #capp2{
+        grid-column: 2/3;
+        grid-row: 1/4;
+        display: flex;
+    }
+    #capp3{
+        grid-column: 1/2;
+        grid-row: 7/10;
+        display: flex;
+    }
+    #capp4{
+        grid-column: 2/3;
+        grid-row: 6/9;
+        display: flex;
+    }
+    
+    .seeMore>a{
+        justify-content: right;
+        font-size: 24px;
+        line-height: 36px;
+        padding-right: 4rem;
+    }
+    .main_team_grid{
+        padding-top: 10rem;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+    .team{
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+        width: 100%;
+       
+    }
+    .team_h1{
+        width: 55%;
+        padding: 1.5rem 0;
+    }
+    .team_sub{
+        width: 50%;
+        padding-bottom: 3rem;
+        
+    }
+    
+    .autor{
+        padding-top: 10rem;
+    }
+    .autor_p{
+        font-size: 36px;
+        line-height: 54px;
+        width: 70%;
+    }
+    .autor_div{
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: repeat(2, min-content);
+        grid-template-areas: 
+        "a b"
+        "a c";
+        align-items: center;
+        padding-bottom: 5rem;
+        width: fit-content;
+    }
+    
+    .autor_img{
+        width: fit-content;
+        justify-content: left;
+        
+    }
+    #imagenautor{
+        width: 90%;
+    }
+    .autor_name{
+        color: var(--grisObscuro);
+        font-weight: 500;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 36px;
+        display: flex;
+        
+    }
+    .autor_titulo{
+        color: var(--grisTxtSub);
+        font-weight: 500;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 27px;
+        display: flex;
+        
+    }
+    footer{
+        background-color: #100E1D;
+        width: 100%;
+        padding: 2rem;
+        display: grid;
+        grid-column-start: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a b c" 
+        "d d d";
+        padding-bottom: 10rem;
+        justify-content: space-around;
+    }
+    .foot_menu{
+        list-style: none;
+    }
+
+    .foot_edie{
+        padding-top: .1rem;
+        padding-left: -5rem;
+    }
+    .foot_edie>a{
+        padding: .5rem .5rem .5rem 0;
+    }
+    .foot_edie>h1{
+        color:var(--grisClaro);
+        font-family: var(--font-Heebo);
+        font-style: normal;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 53px;
+    }
+    .bottom_form{
+        grid-area: c;
+    }
+    .storyp2_f{
+        font-size: 14px;
+        line-height: 21px;
+        padding: 0;
+    }
+    .formulario_f{
+        margin-top: 1rem;          
+    }
+    
+    .signature{
+        grid-area: d;
+        padding: 12rem  0 2rem 0rem;
+    }
 }
